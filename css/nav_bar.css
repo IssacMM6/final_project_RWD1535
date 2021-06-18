@@ -1,5 +1,6 @@
 header {
   background-color: white;
+  z-index: 100;
 }
 .header-close {
   position: fixed;
@@ -79,7 +80,7 @@ header {
   padding: 0 0.8rem;
 }
 
-.nav-log button {
+.nav-log a {
   transform: translateX(-2rem);
 }
 
