@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/nav_bar.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./lib/bootstrap-icons/bootstrap-icons.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>Xmodel-Login</title>
+  </head>
+  <body>
+    <header class="header-close" id="hearder-element">
+      <nav class="nav mx-auto">
+        <div class="nav-icon fn-poppins fns-2">Xmodel</div>
+        <ul class="nav-link">
+          <li class="nav-link-content fns-2 fn-sans fnw-300 text-gray">News</li>
+          <li class="nav-link-list fns-1 fn-sans fnw-300">
+            <a href="#" class="link-none">Rankings</a>
+          </li>
+          <li class="nav-link-list fns-1 fn-sans fnw-300">|</li>
+          <li class="nav-link-list fns-1 fn-sans fnw-300">
+            <a href="#" class="link-none">Models</a>
+          </li>
+        </ul>
+        <form action="#" class="nav-search">
+          <div class="search-box">
+            <input
+              class="search-input fns-1"
+              type="text"
+              placeholder="Search.."
+            />
+            <button class="btn search-icon">
+              <i class="bi bi-search fns-1"></i>
+            </button>
+          </div>
+        </form>
+        <div class="nav-log">
+          <button class="btn-primary">Login</button>
+          <button class="btn-primary d-none">Logout</button>
+        </div>
+        <div class="nav-social">
+          <a href="#" class="link-none"
+            ><i class="fab fa-facebook-square fns-2"></i
+          ></a>
+          <a href="#" class="link-none"
+            ><i class="fab fa-instagram fns-2"></i
+          ></a>
+          <a href="#" class="link-none">
+            <i class="fab fa-twitter fns-2"></i
+          ></a>
+          <a href="#" class="link-none">
+            <i class="far fa-envelope fns-2"></i
+          ></a>
+        </div>
+        <ul class="nav-link-other fn-sans fns-1">
+          <li class="nav-link-other-list">
+            <a href="#" class="link-none">About Xmodels</a>
+          </li>
+          <li class="nav-link-other-list">
+            <a href="#" class="link-none">Help / FAQ</a>
+          </li>
+          <li class="nav-link-other-list">
+            <a href="#" class="link-none">Contact us</a>
+          </li>
+          <li class="nav-link-other-list">
+            <a href="#" class="link-none">Terms of Service</a>
+          </li>
+        </ul>
+        <div class="nav-toggle">
+          <i class="bi bi-list fns-2" id="open-toogle"></i>
+          <i class="bi bi-x-lg d-none" id="close-toogle"></i>
+        </div>
+      </nav>
+    </header>
+    <main style="margin-top: 8rem">
+      <section class="login-section mx-auto">
+        <div class="fn-poppins fns-2">Login using your social account:</div>
+        <svg x="0px" y="0px" width="100%" height="10px">
+          <line
+            fill="none"
+            stroke="rgb(194, 194, 194)"
+            stroke-width="0.8"
+            stroke-linecap="round"
+            stroke-dasharray="3"
+            x1="0%"
+            y1="5"
+            x2="100%"
+            y2="5"
+          />
+        </svg>
+        <div class="login-section-social">
+          <a href="#" class="link-none">
+            <i class="fab fa-google-plus fns-3 text-danger"></i>
+          </a>
+          <span class="fn-sans text-gray">or</span>
+          <a href="#" class="link-none">
+            <i class="fab fa-facebook fns-3 text-primary"></i>
+          </a>
+        </div>
+        <div class="fn-poppins fns-2">Or Login with Xmodel account:</div>
+        <svg x="0px" y="0px" width="100%" height="10px">
+          <line
+            fill="none"
+            stroke="rgb(194, 194, 194)"
+            stroke-width="0.8"
+            stroke-linecap="round"
+            stroke-dasharray="3"
+            x1="0%"
+            y1="5"
+            x2="100%"
+            y2="5"
+          />
+        </svg>
+        <form action="#" class="login-section-form">
+          <input
+            type="text"
+            class="fns-1"
+            placeholder="email.."
+            autocomplete="off"
+          />
+          <input
+            type="password"
+            class="fns-1"
+            placeholder="account..."
+            autocomplete="off"
+          />
+          <input type="button" class="btn btn-primary" value="Login" />
+          <p class="fn-sans fns-1">
+            New to Xmodel?
+            <a href="#" class="link-none text-primary">click here</a>
+            to registor
+          </p>
+        </form>
+      </section>
+    </main>
+    <script src="js/nav_control.js"></script>
+  </body>
+</html>

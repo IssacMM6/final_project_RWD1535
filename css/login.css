@@ -1,0 +1,28 @@
+.login-section {
+  text-align: center;
+  max-width: 500px;
+}
+
+.login-section .login-section-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.login-section .login-section-social span {
+  padding: 0 0.6rem;
+}
+
+.login-section .login-section-form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.8rem;
+}
+
+.login-section .login-section-form input {
+  height: 40px;
+  margin: 0.5rem 0;
+  padding: 0 1rem;
+  border: 1.8px solid var(--gray);
+  border-radius: 5px;
+}
