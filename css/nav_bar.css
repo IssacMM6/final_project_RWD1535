@@ -89,6 +89,9 @@ header .banner-promotion {
 .nav-log a {
   transform: translateX(-2rem);
 }
+.nav-log .user {
+  margin-right: 1.5rem;
+}
 
 .nav-social {
   display: none;
@@ -179,9 +182,19 @@ header .banner-promotion {
   padding: 1rem 0;
   padding-bottom: 1.5rem;
   justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .header-open .nav-log a {
+  padding: 0.7rem 0;
   transform: translateX(0);
+  margin: 0;
+}
+.header-open .nav-log i {
+  display: none;
+}
+.header-open .nav-log span {
+  display: block;
 }
 .header-open .nav-social {
   display: block;

@@ -18,6 +18,10 @@
   </head>
   <body>
     <header class="header-close" id="hearder-element">
+      <div class="banner-promotion fn-poppins fns-1">
+        registor your account to get 30% discount.
+        <a href="#" class="text-white">click here</a>
+      </div>
       <nav class="nav mx-auto">
         <a href="./index.html" class="nav-icon fn-poppins fns-2 link-none"
           >Xmodel</a
@@ -45,8 +49,10 @@
           </div>
         </form>
         <div class="nav-log">
-          <a href="#" class="btn-primary">Login</a>
-          <a href="#" class="btn-primary d-none">Logout</a>
+          <a href="./login.html" class="btn-primary" id="login-btn">Login</a>
+          <a href="./login.html" class="btn-primary d-none" id="logout-btn"
+            >Logout</a
+          >
         </div>
         <div class="nav-social">
           <a href="#" class="link-none"
@@ -121,20 +127,28 @@
             y2="5"
           />
         </svg>
-        <form action="#" class="login-section-form">
+        <form action="#" method="POST" class="login-section-form">
+          <div class="message-box fn-sans fns-1 d-none" id="message-box"></div>
           <input
-            type="text"
+            type="email"
             class="fns-1"
             placeholder="email.."
             autocomplete="off"
+            id="email-input"
           />
           <input
             type="password"
             class="fns-1"
             placeholder="account..."
             autocomplete="off"
+            id="password-input"
           />
-          <input type="button" class="btn btn-primary" value="Login" />
+          <input
+            type="button"
+            class="btn btn-primary"
+            value="Login"
+            id="login-input"
+          />
           <p class="fn-sans fns-1">
             New to Xmodel?
             <a href="#" class="link-none text-primary">click here</a>
@@ -143,6 +157,8 @@
         </form>
       </section>
     </main>
+    <script src="js/check_local_storage.js"></script>
     <script src="js/nav_control.js"></script>
+    <script src="js/login_form.js"></script>
   </body>
 </html>
