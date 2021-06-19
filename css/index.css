@@ -9,12 +9,7 @@ main {
   position: relative;
   overflow: hidden;
 }
-.banner-section .banner-promotion {
-  text-align: center;
-  background-color: black;
-  color: white;
-  padding: 0.3rem 0;
-}
+
 .banner-section .banner-img {
   border-radius: 3px;
   background: url("../model_image/banner.jpg");
@@ -44,4 +39,82 @@ main {
 
 .banner-section .banner-content a .banner-btn {
   margin: 2rem 0;
+}
+
+/* modal section */
+.modal-section {
+  border-radius: 5px;
+  max-width: 1300px;
+  height: max-content;
+  padding: 3rem 2rem;
+  display: flex;
+  overflow: hidden;
+}
+.modal-section:hover {
+  background-color: rgba(240, 240, 240, 0.698);
+}
+.modal-section .modal-img {
+  background: url("../model_image/banner2.jpg");
+  width: 400px;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.modal-section .modal-content {
+  flex: 1;
+  padding: 3rem;
+}
+
+.modal-section .modal-content .model-title {
+  padding: 0.5rem 0;
+}
+.modal-section .modal-content .modal-link {
+  padding: 0.6rem 1rem;
+  margin-top: 2rem;
+}
+.weeken-section {
+  padding: 2rem 0;
+  max-width: 1300px;
+}
+
+.weeken-section .weeken-modal-container {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  display: flex;
+  height: max-content;
+}
+.weeken-section .weenken-modal-header {
+  padding: 3rem 0;
+}
+.weeken-modal-container .modal-card-header {
+  padding: 1rem 0;
+}
+@media only screen and (max-width: 900px) {
+  .modal-section {
+    padding: 2rem 0;
+  }
+  .modal-section .modal-img {
+    width: 200px;
+    height: 200px;
+  }
+  .modal-section .modal-content {
+    padding: 1rem;
+  }
+
+  .modal-section .modal-content .model-title {
+    padding: 0.2rem 0;
+  }
+  .modal-section .modal-content .model-header {
+    font-size: 1.6rem;
+  }
+  .modal-section .modal-content .modal-link {
+    padding: 0.4rem 0.6rem;
+    margin-top: 1rem;
+  }
+  .weeken-section {
+    padding: 0 1rem;
+    border-radius: 3px;
+  }
 }

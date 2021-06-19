@@ -2,6 +2,12 @@ header {
   background-color: white;
   z-index: 100;
 }
+header .banner-promotion {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 0.3rem 0;
+}
 .header-close {
   position: fixed;
   top: 0;
@@ -174,7 +180,7 @@ header {
   padding-bottom: 1.5rem;
   justify-content: center;
 }
-.header-open .nav-log button {
+.header-open .nav-log a {
   transform: translateX(0);
 }
 .header-open .nav-social {
