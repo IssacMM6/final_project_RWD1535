@@ -120,6 +120,16 @@ header .banner-promotion {
 .nav-toggle i {
   cursor: pointer;
 }
+.nav-footer {
+  margin: 1rem auto;
+  padding: 0;
+  list-style: none;
+  width: max-content;
+}
+.nav-link-footer {
+  display: inline-block;
+  padding: 0.5rem;
+}
 @media only screen and (max-width: 980px) {
   .nav {
     justify-content: flex-start;
@@ -128,6 +138,10 @@ header .banner-promotion {
   .nav-search,
   .nav-log {
     display: none;
+  }
+  .nav-link-footer {
+    display: block;
+    text-align: center;
   }
 }
 /* Header Open */
@@ -163,6 +177,9 @@ header .banner-promotion {
 .header-open .nav-link .nav-link-list {
   display: block;
   padding: 0.7rem 0;
+}
+.header-open .nav-link .nav-link-content {
+  padding: 2rem 0;
 }
 .header-open .nav-link .nav-link-list:nth-child(3) {
   display: none;

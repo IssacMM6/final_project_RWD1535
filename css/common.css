@@ -20,7 +20,9 @@
 .d-none {
   display: none;
 }
-
+.p-1 {
+  padding: 1rem;
+}
 .link-none {
   text-decoration: none;
   color: black;
@@ -28,7 +30,16 @@
 .link-none:hover {
   color: rgb(58, 58, 58);
 }
-
+.nav-footer {
+  margin: 1rem auto;
+  padding: 0;
+  list-style: none;
+  width: max-content;
+}
+.nav-link-footer {
+  display: inline-block;
+  padding: 0.5rem;
+}
 /* color and background */
 .text-gray {
   color: var(--gray);
@@ -44,6 +55,12 @@
 }
 .text-gray-50 {
   color: rgb(95, 95, 95);
+}
+.text-center {
+  text-align: center;
+}
+.text-warning {
+  color: rgb(189, 189, 9);
 }
 .bg-primary {
   background-color: rgb(0, 132, 255);

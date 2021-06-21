@@ -37,6 +37,7 @@ window.addEventListener(
       "click",
       function () {
         document.body.style.overflowY = "hidden";
+        headerElement.parent.style.overflowY = "scroll";
         headerElement.parent.classList.remove("header-close");
         headerElement.parent.classList.add("header-open");
         headerElement.openToogleBtn.classList.add("d-none");
@@ -49,6 +50,7 @@ window.addEventListener(
       "click",
       function () {
         document.body.style.overflowY = "scroll";
+        headerElement.parent.style.overflowY = "hidden";
         headerElement.parent.classList.remove("header-open");
         headerElement.parent.classList.add("header-close");
         headerElement.openToogleBtn.classList.remove("d-none");
