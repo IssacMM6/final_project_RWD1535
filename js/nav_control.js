@@ -2,8 +2,9 @@ window.addEventListener(
   "load",
   function () {
     let predefinedData = {
-      username: "tiny123@gmail.com",
+      email: "tiny123@gmail.com",
       password: "tiny312",
+      userName: "Tiny",
     };
     let getId = (idName) => {
       return document.getElementById(idName);
@@ -20,9 +21,10 @@ window.addEventListener(
     let isUserDataEmpty = getUserData === "";
     if (!isUserDataEmpty) {
       let parsedUserData = JSON.parse(getUserData);
-      let userNameExist = parsedUserData.username === predefinedData.username;
+      let emailExist = parsedUserData.email === predefinedData.email;
       let passwordExist = parsedUserData.password === predefinedData.password;
-      if (userNameExist && passwordExist) {
+
+      if (emailExist && passwordExist) {
         headerElement.loginBtn.classList.add("d-none");
         headerElement.logoutBtn.classList.remove("d-none");
         headerElement.profileBtn.classList.remove("d-none");

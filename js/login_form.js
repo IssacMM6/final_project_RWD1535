@@ -2,6 +2,7 @@ window.addEventListener(
   "load",
   function () {
     let predefinedData = {
+      username: "Tiny",
       email: "tiny123@gmail.com",
       password: "tiny312",
     };
@@ -36,7 +37,11 @@ window.addEventListener(
           messageBox.innerHTML = "User Didn't Exist.Try Again.";
         } else {
           messageBox.classList.add("d-none");
-          let userData = { username: emailInput, password: passwordInput };
+          let userData = {
+            email: emailInput,
+            password: passwordInput,
+            userName: predefinedData.username,
+          };
           localStorage.setItem("userData", JSON.stringify(userData));
           window.location.replace("../index.html");
         }

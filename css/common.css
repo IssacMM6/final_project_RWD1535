@@ -23,6 +23,16 @@
 .p-1 {
   padding: 1rem;
 }
+.my-1 {
+  margin: 1rem 0;
+}
+.link-underline {
+  color: black;
+  text-decoration: underline;
+}
+.link-underline:hover {
+  color: rgb(58, 58, 58);
+}
 .link-none {
   text-decoration: none;
   color: black;
@@ -30,16 +40,7 @@
 .link-none:hover {
   color: rgb(58, 58, 58);
 }
-.nav-footer {
-  margin: 1rem auto;
-  padding: 0;
-  list-style: none;
-  width: max-content;
-}
-.nav-link-footer {
-  display: inline-block;
-  padding: 0.5rem;
-}
+
 /* color and background */
 .text-gray {
   color: var(--gray);

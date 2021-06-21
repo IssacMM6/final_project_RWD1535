@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/nav_bar.css" />
-    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/admin.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./lib/bootstrap-icons/bootstrap-icons.css" />
     <link
       rel="stylesheet"
@@ -14,7 +15,7 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    <title>Xmodel - Login</title>
+    <title>Xmodel - Profile</title>
   </head>
   <body>
     <header class="header-close" id="hearder-element">
@@ -111,77 +112,45 @@
         </div>
       </nav>
     </header>
-    <main style="margin-top: 8rem">
-      <section class="login-section mx-auto">
-        <div class="fn-poppins fns-2">Login using your social account:</div>
-        <svg x="0px" y="0px" width="100%" height="10px">
-          <line
-            fill="none"
-            stroke="rgb(194, 194, 194)"
-            stroke-width="0.8"
-            stroke-linecap="round"
-            stroke-dasharray="3"
-            x1="0%"
-            y1="5"
-            x2="100%"
-            y2="5"
-          />
-        </svg>
-        <div class="login-section-social">
-          <a href="#" class="link-none">
-            <i class="fab fa-google-plus fns-3 text-danger"></i>
-          </a>
-          <span class="fn-sans text-gray">or</span>
-          <a href="#" class="link-none">
-            <i class="fab fa-facebook fns-3 text-primary"></i>
-          </a>
+    <main>
+      <section class="user-container">
+        <div class="fns-1 fn-sans fnw-600" id="user-name">@user - Tiny</div>
+        <div class="fns-1 fn-sans my-1">Haired Model List</div>
+        <div class="hired-list" id="hired-list">
+          <div class="hired-list-user">
+            <div class="fns-1 fn-sans p-1">
+              <span>2020-11-1</span>
+              You hired <a href="#" class="link-underline">James</a>
+            </div>
+          </div>
         </div>
-        <div class="fn-poppins fns-2">Or Login with Xmodel account:</div>
-        <svg x="0px" y="0px" width="100%" height="10px">
-          <line
-            fill="none"
-            stroke="rgb(194, 194, 194)"
-            stroke-width="0.8"
-            stroke-linecap="round"
-            stroke-dasharray="3"
-            x1="0%"
-            y1="5"
-            x2="100%"
-            y2="5"
-          />
-        </svg>
-        <form action="#" method="POST" class="login-section-form">
-          <div class="message-box fn-sans fns-1 d-none" id="message-box"></div>
-          <input
-            type="email"
-            class="fns-1"
-            placeholder="email.."
-            autocomplete="off"
-            id="email-input"
-          />
-          <input
-            type="password"
-            class="fns-1"
-            placeholder="account..."
-            autocomplete="off"
-            id="password-input"
-          />
-          <input
-            type="button"
-            class="btn btn-primary"
-            value="Login"
-            id="login-input"
-          />
-          <p class="fn-sans fns-1">
-            New to Xmodel?
-            <a href="#" class="link-none text-primary">click here</a>
-            to registor
-          </p>
-        </form>
       </section>
     </main>
+    <footer>
+      <ul class="nav-footer">
+        <li class="nav-link-footer">
+          <a href="#" class="link-none fns-1 fn-sans">Ranking</a>
+        </li>
+        <li class="nav-link-footer">
+          <a href="#" class="link-none fns-1 fn-sans">Gallary</a>
+        </li>
+        <li class="nav-link-footer">
+          <a href="#" class="link-none fns-1 fn-sans">Home</a>
+        </li>
+        <li class="nav-link-footer">
+          <a href="#" class="link-none fns-1 fn-sans">Contact Us</a>
+        </li>
+        <li class="nav-link-footer">
+          <a href="#" class="link-none fns-1 fn-sans">Help / FAQ</a>
+        </li>
+      </ul>
+      <div class="mx-auto fns-1 fn-sans text-center p-1">
+        Copyright&copy;Xmodel.com
+      </div>
+    </footer>
     <script src="js/check_local_storage.js"></script>
     <script src="js/nav_control.js"></script>
-    <script src="js/login_form.js"></script>
+    <script src="js/admin.js"></script>
   </body>
 </html>
+l
