@@ -1,40 +1,44 @@
+import { predefinedData } from "./mock_data.js";
+import { docGetId, docCreate } from "./common_function.js";
 window.addEventListener(
   "load",
   function () {
-    let predefinedData = {
-      email: "tiny123@gmail.com",
-      password: "tiny312",
-      userName: "Tiny",
-    };
-    let getId = (idName) => {
-      return document.getElementById(idName);
-    };
+    /**
+     *    headerElement <= parent
+     *      |--openToogleBtn    <= child
+     *      |--closeToogleBtn   <= child
+     *      |--loginBtn         <= child
+     *      |--logoutBtn        <= child
+     *      |--profileBtn       <= child
+     */
     let headerElement = {
-      parent: getId("hearder-element"),
-      openToogleBtn: getId("open-toogle"),
-      closeToogleBtn: getId("close-toogle"),
-      loginBtn: getId("login-btn"),
-      logoutBtn: getId("logout-btn"),
-      profileBtn: getId("profile-btn"),
+      parent: docGetId("hearder-element"),
+      openToogleBtn: docGetId("open-toogle"),
+      closeToogleBtn: docGetId("close-toogle"),
+      loginBtn: docGetId("login-btn"),
+      logoutBtn: docGetId("logout-btn"),
+      profileBtn: docGetId("profile-btn"),
     };
+    /**
+     *  getUserData from localStorage
+     *  if getUserData is not empty hide loginBtn , show logoutBtn and profileBtn
+     *  else show loginBtn , hide logoutBtn and profileBtn
+     */
     let getUserData = localStorage.getItem("userData");
     let isUserDataEmpty = getUserData === "";
     if (!isUserDataEmpty) {
-      let parsedUserData = JSON.parse(getUserData);
-      let emailExist = parsedUserData.email === predefinedData.email;
-      let passwordExist = parsedUserData.password === predefinedData.password;
-
-      if (emailExist && passwordExist) {
-        headerElement.loginBtn.classList.add("d-none");
-        headerElement.logoutBtn.classList.remove("d-none");
-        headerElement.profileBtn.classList.remove("d-none");
-      }
+      headerElement.loginBtn.classList.add("d-none");
+      headerElement.logoutBtn.classList.remove("d-none");
+      headerElement.profileBtn.classList.remove("d-none");
     } else {
       headerElement.loginBtn.classList.remove("d-none");
       headerElement.logoutBtn.classList.add("d-none");
       headerElement.profileBtn.classList.add("d-none");
     }
 
+    /**
+     *  This section is about navbar toggleBtn
+     */
     headerElement.openToogleBtn.addEventListener(
       "click",
       function () {

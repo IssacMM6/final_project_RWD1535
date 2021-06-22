@@ -1,20 +1,23 @@
+import { predefinedData } from "./mock_data.js";
+import { docGetId } from "./common_function.js";
 window.addEventListener(
   "load",
   function () {
-    let predefinedData = {
-      username: "Tiny",
-      email: "tiny123@gmail.com",
-      password: "tiny312",
-    };
-    let getId = (idName) => {
-      return document.getElementById(idName);
-    };
+    /**
+     *    headerElement <= parent
+     *      |--openToogleBtn    <= child
+     *      |--closeToogleBtn   <= child
+     *      |--loginBtn         <= child
+     *      |--logoutBtn        <= child
+     *      |--profileBtn       <= child
+     */
     let formElement = {
-      emailInput: getId("email-input"),
-      passwordInput: getId("password-input"),
-      loginBtn: getId("login-input"),
-      messageBox: getId("message-box"),
+      emailInput: docGetId("email-input"),
+      passwordInput: docGetId("password-input"),
+      loginBtn: docGetId("login-input"),
+      messageBox: docGetId("message-box"),
     };
+
     formElement.loginBtn.addEventListener(
       "click",
       function () {
@@ -38,8 +41,6 @@ window.addEventListener(
         } else {
           messageBox.classList.add("d-none");
           let userData = {
-            email: emailInput,
-            password: passwordInput,
             userName: predefinedData.username,
           };
           localStorage.setItem("userData", JSON.stringify(userData));

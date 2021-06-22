@@ -1,56 +1,91 @@
 import { modelData } from "./mock_data.js";
+import { sortByDEC, docGetId, docCreate } from "./common_function.js";
 
 window.addEventListener(
   "load",
   function () {
-    let getModelData = modelData.sort((a, b) => {
-      if (a.rating < b.rating) {
-        return 1;
-      }
-      if (a.rating > b.rating) {
-        return -1;
-      }
-      return 0;
-    });
+    let getModelData = sortByDEC(modelData);
 
-    let trandingModelElement = document.getElementById("tranding-model");
-    trandingModelElement.innerHTML = "";
+    /**
+     *   weeken-modal-container <= parent
+     *      |--weeken-modal-card (add 6 times)
+     *          |--image
+     *          |--modal-card-header
+     */
+    let weekenModelContainer = docGetId("weeken-modal-container");
+    weekenModelContainer.innerHTML = "";
     for (let i = 0; i < 6; i++) {
-      let weekenModalCard = document.createElement("a");
+      let weekenModalCard = docCreate("a");
+      let image = docCreate("div");
+      let modalCardHeader = docCreate("div");
+
+      /**
+       * weekenModelCard styling
+       */
       weekenModalCard.href = "#";
-      weekenModalCard.classList.add("weeken-modal-card");
-      weekenModalCard.classList.add("link-none");
-      let image = document.createElement("div");
+      weekenModalCard.setAttribute("class", "weeken-modal-card link-none");
+
+      /**
+       * image styling
+       */
       image.style.background = `url("/model_image/${getModelData[i].filename}")`;
       image.style.backgroundSize = "cover";
       image.style.backgroundPosition = "center";
       image.style.width = "200px";
       image.style.height = "200px";
       image.style.borderRadius = "3px";
-      let modalCardHeader = document.createElement("div");
+
+      /**
+       * modalCardHeader styling
+       */
       modalCardHeader.setAttribute("class", "modal-card-header fns-1 fn-sans");
       modalCardHeader.innerHTML = `${getModelData[i].modalName}&nbsp;<i class="fas fa-crown fns-1 text-warning"></i><br /><span class="fns-1 text-gray-50"> (modal)</span>`;
+
+      /**
+       * appending child
+       */
       weekenModalCard.appendChild(image);
       weekenModalCard.appendChild(modalCardHeader);
-      trandingModelElement.appendChild(weekenModalCard);
+      weekenModelContainer.appendChild(weekenModalCard);
     }
 
-    let gallaryImgContainer = document.getElementById("gallary-img-container");
+    /**
+     *    gallary-img-container <= parent
+     *      |--wgallary-img-cards (add 12 times)
+     *          |--card-img
+     *          |--card-title
+     */
+    let gallaryImgContainer = docGetId("gallary-img-container");
     gallaryImgContainer.innerHTML = "";
     for (let i = 0; i < getModelData.length - 3; i++) {
-      let gallaryImageCard = document.createElement("a");
+      let gallaryImageCard = docCreate("a");
+      let cardImage = docCreate("div");
+      let cardTitle = docCreate("div");
+
+      /**
+       * gallaryImageCard styling
+       */
       gallaryImageCard.setAttribute("class", "gallary-img-cards link-none");
       gallaryImageCard.id = getModelData[i].gender;
-      let cardImage = document.createElement("div");
+      /**
+       *    cardImage styling
+       */
       cardImage.setAttribute("class", "card-img");
       cardImage.style.background = `url(/model_image/${getModelData[i].filename})`;
       cardImage.style.width = "260px";
       cardImage.style.height = "300px";
       cardImage.style.backgroundSize = "cover";
       cardImage.style.backgroundPosition = "center";
-      let cardTitle = document.createElement("div");
+
+      /**
+       * cardTitle styling
+       */
       cardTitle.setAttribute("class", "card-title fns-1 fn-sans");
       cardTitle.innerHTML = `@${getModelData[i].modalName}`;
+
+      /**
+       * appending child
+       */
       gallaryImageCard.appendChild(cardImage);
       gallaryImageCard.appendChild(cardTitle);
       gallaryImgContainer.appendChild(gallaryImageCard);
