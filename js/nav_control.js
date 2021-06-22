@@ -6,6 +6,7 @@ window.addEventListener(
     /**
      *    headerElement <= parent
      *      |--openToogleBtn    <= child
+     *      |--promotionTag     <= child
      *      |--closeToogleBtn   <= child
      *      |--loginBtn         <= child
      *      |--logoutBtn        <= child
@@ -13,6 +14,7 @@ window.addEventListener(
      */
     let headerElement = {
       parent: docGetId("hearder-element"),
+      promotionTag: docGetId("banner-promotion"),
       openToogleBtn: docGetId("open-toogle"),
       closeToogleBtn: docGetId("close-toogle"),
       loginBtn: docGetId("login-btn"),
@@ -46,6 +48,7 @@ window.addEventListener(
         headerElement.parent.style.overflowY = "scroll";
         headerElement.parent.classList.remove("header-close");
         headerElement.parent.classList.add("header-open");
+        headerElement.promotionTag.classList.add("d-none");
         headerElement.openToogleBtn.classList.add("d-none");
         headerElement.closeToogleBtn.classList.remove("d-none");
       },
@@ -59,6 +62,7 @@ window.addEventListener(
         headerElement.parent.style.overflowY = "hidden";
         headerElement.parent.classList.remove("header-open");
         headerElement.parent.classList.add("header-close");
+        headerElement.promotionTag.classList.remove("d-none");
         headerElement.openToogleBtn.classList.remove("d-none");
         headerElement.closeToogleBtn.classList.add("d-none");
       },

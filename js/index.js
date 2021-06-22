@@ -67,6 +67,7 @@ window.addEventListener(
        */
       gallaryImageCard.setAttribute("class", "gallary-img-cards link-none");
       gallaryImageCard.id = getModelData[i].gender;
+      gallaryImageCard.href = "#";
       /**
        *    cardImage styling
        */

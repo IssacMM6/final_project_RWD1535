@@ -157,9 +157,27 @@ main {
 footer {
   margin-top: 3rem;
   padding: 1rem;
+  border-top: 1.8px solid var(--gray);
+  padding: 1rem;
 }
 .nav-footer {
   height: max-content;
+}
+@media only screen and (max-width: 600px) {
+  .banner-section .banner-content .banner-logo {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .banner-section .banner-content .banner-label {
+    font-size: 1.2rem;
+  }
+  .banner-section .banner-content a .banner-btn {
+    font-size: 0.8rem;
+  }
+  .modal-section .modal-img {
+    width: 150px !important;
+    height: 200px !important;
+  }
 }
 @media only screen and (max-width: 900px) {
   .modal-section {

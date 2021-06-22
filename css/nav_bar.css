@@ -239,4 +239,11 @@ header .banner-promotion {
   .nav-social {
     width: 100% !important;
   }
+  header .banner-promotion {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 0.3rem 0;
+    font-size: 0.6rem;
+  }
 }
