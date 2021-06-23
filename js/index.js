@@ -28,7 +28,7 @@ window.addEventListener(
       /**
        * image styling
        */
-      image.style.background = `url("/model_image/${getModelData[i].filename}")`;
+      image.style.background = `url("/images/${getModelData[i].filename}")`;
       image.style.backgroundSize = "cover";
       image.style.backgroundPosition = "center";
       image.style.width = "200px";
@@ -72,7 +72,7 @@ window.addEventListener(
        *    cardImage styling
        */
       cardImage.setAttribute("class", "card-img");
-      cardImage.style.background = `url(/model_image/${getModelData[i].filename})`;
+      cardImage.style.background = `url(/images/${getModelData[i].filename})`;
       cardImage.style.width = "260px";
       cardImage.style.height = "300px";
       cardImage.style.backgroundSize = "cover";
