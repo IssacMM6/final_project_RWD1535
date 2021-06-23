@@ -41,7 +41,7 @@ window.addEventListener(
         } else {
           messageBox.classList.add("d-none");
           let userData = {
-            userName: predefinedData.username,
+            userName: predefinedData.userName,
           };
           localStorage.setItem("userData", JSON.stringify(userData));
           window.location.replace("../index.html");
