@@ -35,6 +35,9 @@ window.addEventListener(
       formElement.passwordInput.value = getUserData.password;
     }
 
+    formElement.emailInput.addEventListener("keyup", function () {
+      setItemsToLocalStorage("userData", formElement.emailInput.value, "", "");
+    });
     formElement.loginBtn.addEventListener(
       "click",
       function () {
@@ -47,12 +50,7 @@ window.addEventListener(
          *    or if you got to the index.html page and return to the login from
          *    the text Input will not be deleted
          */
-        setItemsToLocalStorage(
-          "userData",
-          emailInput.value,
-          passwordInput.value,
-          ""
-        );
+        setItemsToLocalStorage("userData", emailInput.value, "", "");
 
         /**
          *  checking the Input

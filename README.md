@@ -1,21 +1,70 @@
-# Final project RWD1535
+## Final Project RWD1535
 
-Final project RWD1535 by Issac
+```sh
+Final Project RWD1535 by Saw Issac
 
-## Page flow
+StudentName: Issac
+StudentID: RWD1535
+```
 
-index.html -> login.html -> index.html -> admin.html
+## Page Flow
 
-## Clickable button
+```sh
+login.html -> admin.html -> index.html
+```
 
-Page:: index.html, login.html, admin.html <br />
-Button:: Gallary, Ranking, Navbar toggle, logo , login ,logout , profile
+## Clickable Button List
 
-## Note
+Depending on the html file, Gallary,Ranking and ect.. link will change.
 
-If you want to open this file, use Live Server extension in vs code to open this file.
+```sh
+- Gallary
+- Ranking
+- Navbar Toggle
+- Logo
+- Login
+- Logout
+- Profile
+- Gallary Section (male, female and ALL button)
+```
 
-## login.html email and password
+## How To Open HTML File
 
-email:: tiny123@gmail.com <br />
-password:: tiny312
+To open the html file, use Live Server extension in vs code to open this file.
+
+##### Extension Name
+
+```sh
+Live Server
+
+```
+
+## Loginform Email and Password
+
+##### Email
+
+```sh
+tiny123@gmail.com
+```
+
+##### Password
+
+```sh
+tiny1312
+```
+
+## Changes and News
+
+##### Changes
+
+- Fixed login form issue.
+  - Email format checking is added.
+  - Depending on the input, specific error will be display on the error message box.
+  - If you write the email and refresh the page the value in email input will not be erased.
+  - If your login is sucess, the page will redirect you to admin.html
+- check_local_storage.js file removed.
+
+##### News
+
+- Added email format checking for login form
+- Added Categorize button for Gallary Section in index.html file

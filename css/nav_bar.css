@@ -17,6 +17,10 @@ header .banner-promotion {
   border-bottom: 1.8px solid var(--gray);
 }
 
+.header-close * {
+  transition: 0.3s ease-in-out;
+}
+
 .nav {
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -152,6 +156,9 @@ header .banner-promotion {
   left: 0;
   right: 0;
   bottom: 0;
+}
+.header-open * {
+  transition: 0.3s ease-in-out;
 }
 .header-open .nav {
   flex-direction: column;

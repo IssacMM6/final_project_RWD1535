@@ -24,7 +24,7 @@ window.addEventListener(
       let modalCardHeader = docCreate("div");
 
       weekenModalCard.href = "#";
-      weekenModalCard.setAttribute("class", "weeken-modal-card link-none");
+      weekenModalCard.setAttribute("class", "link-none");
 
       image.style.background = `url("/images/${getSortedModalData[i].filename}")`;
       image.style.backgroundSize = "cover";

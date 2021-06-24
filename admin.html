@@ -20,7 +20,7 @@
   <body>
     <header class="header-close" id="hearder-element">
       <div class="banner-promotion fn-poppins fns-1" id="banner-promotion">
-        registor your account to get 30% discount.
+        Registor your account to get 30% discount.
         <a href="#" class="text-white">click here</a>
       </div>
       <nav class="nav mx-auto">
@@ -114,28 +114,47 @@
     </header>
     <main>
       <section class="user-container">
-        <div class="fns-1 fn-sans fnw-600" id="user-name">@user - Tiny</div>
-        <div class="fns-1 fn-sans my-1">Haired Model List</div>
-        <div class="hired-list" id="hired-list">
-          <div class="hired-list-user">
-            <div class="fns-1 fn-sans p-1">
-              <span>2020-11-1</span>
-              You hired <a href="#" class="link-underline">James</a>
-            </div>
-          </div>
+        <div class="profile-border">
+          <img
+            src="./images/model_pic_22.jpg"
+            alt=""
+            width="50px"
+            height="50px"
+          />
         </div>
+        <div class="fns-1 fn-sans fnw-600 user-name" id="user-name">
+          @user - Tiny
+        </div>
+        <svg x="0px" y="0px" width="100%" height="10px">
+          <line
+            fill="none"
+            stroke="rgb(194, 194, 194)"
+            stroke-width="0.8"
+            stroke-linecap="round"
+            stroke-dasharray="3"
+            x1="0%"
+            y1="5"
+            x2="100%"
+            y2="5"
+          />
+        </svg>
+        <div class="fns-1 fn-sans my-1">Haired Model List</div>
+        <div class="hired-list" id="hired-list"></div>
       </section>
     </main>
     <footer>
       <ul class="nav-footer">
         <li class="nav-link-footer">
-          <a href="./index.html" class="link-none fns-1 fn-sans">Ranking</a>
+          <a href="#ranking" class="link-none fns-1 fn-sans">Ranking</a>
         </li>
         <li class="nav-link-footer">
-          <a href="./index.html" class="link-none fns-1 fn-sans">Gallary</a>
+          <a href="#gallary" class="link-none fns-1 fn-sans">Gallary</a>
         </li>
         <li class="nav-link-footer">
           <a href="./index.html" class="link-none fns-1 fn-sans">Home</a>
+        </li>
+        <li class="nav-link-footer">
+          <a href="#" class="link-none fns-1 fn-sans">About</a>
         </li>
         <li class="nav-link-footer">
           <a href="#" class="link-none fns-1 fn-sans">Contact Us</a>
@@ -143,12 +162,14 @@
         <li class="nav-link-footer">
           <a href="#" class="link-none fns-1 fn-sans">Help / FAQ</a>
         </li>
+        <li class="nav-link-footer">
+          <a href="#" class="link-none fns-1 fn-sans">Term and service</a>
+        </li>
       </ul>
       <div class="mx-auto fns-1 fn-sans text-center p-1">
         Copyright&copy;Xmodel.com
       </div>
     </footer>
-    <script src="js/check_local_storage.js"></script>
     <script type="module" src="js/nav_control.js"></script>
     <script type="module" src="js/admin.js"></script>
   </body>

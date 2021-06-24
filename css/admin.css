@@ -6,12 +6,23 @@ main {
   max-width: 900px;
   margin: 8rem auto;
   margin-bottom: 0;
-  border: 1.8px solid var(--gray);
+}
+.user-container .profile-border {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  overflow: hidden;
+  border: 3px solid rgb(189, 189, 9);
+  display: inline-block;
+}
+.user-container .user-name {
+  display: inline-block;
+  transform: translateY(-13px);
+}
+.user-container .hired-list {
   border-radius: 5px;
   padding: 1rem;
-}
-
-.user-container .hired-list {
+  border: 1.8px solid var(--gray);
   display: flex;
   flex-direction: column;
 }
@@ -19,6 +30,7 @@ main {
 .hired-list-user {
   border-left: 0.3rem solid black;
   margin: 1rem 0;
+  transition: 0.2s ease-in;
 }
 .hired-list-user:hover {
   border-left: 0.3rem solid black;

@@ -18,7 +18,7 @@ window.addEventListener(
      *          |--listInnerElement
      */
     let userNameElement = docGetId("user-name");
-    userNameElement.innerHTML = `@user - ${getUserData.userName}`;
+    userNameElement.innerHTML = `@${getUserData.userName} <br /><i class="fas fa-crown fns-1 text-warning"></i>&nbsp;Primum`;
 
     let hiredListElement = docGetId("hired-list");
     for (let i = 0; i < fakeDateAndModel.length; i++) {
