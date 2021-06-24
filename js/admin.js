@@ -8,7 +8,7 @@ import { fakeDateAndModel } from "./mock_data.js";
 window.addEventListener(
   "load",
   function () {
-    let parsedUserData = getItemsFromLocalStorage("userData");
+    let getUserData = getItemsFromLocalStorage("userData");
 
     /**
      *
@@ -18,9 +18,9 @@ window.addEventListener(
      *          |--listInnerElement
      */
     let userNameElement = docGetId("user-name");
-    let hiredListElement = docGetId("hired-list");
-    userNameElement.innerHTML = `@user - ${parsedUserData.userName}`;
+    userNameElement.innerHTML = `@user - ${getUserData.userName}`;
 
+    let hiredListElement = docGetId("hired-list");
     for (let i = 0; i < fakeDateAndModel.length; i++) {
       let date = fakeDateAndModel[i].date;
       let model = fakeDateAndModel[i].hiredModel;

@@ -27,6 +27,19 @@ export function getItemsFromLocalStorage(itemName) {
 }
 
 /**
+ *  this function is for set Items in local storage
+ */
+
+export function setItemsToLocalStorage(items, email, password, userName) {
+  let createUserData = {
+    email: email,
+    password: password,
+    userName: userName,
+  };
+  window.localStorage.setItem(items, JSON.stringify(createUserData));
+}
+
+/**
  *  sortByDEC() function is used to get decenting order of items
  *  this function is built for modelData in mock_data.js
  */

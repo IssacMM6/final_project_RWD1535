@@ -9,8 +9,7 @@ window.addEventListener(
 
     if (typeof Storage !== undefined) {
       let getUserData = localStorage.getItem("userData");
-      let createUserData = { userName: "", password: "" };
-
+      let createUserData = { email: "", password: "", userName: "" };
       if (getUserData === null) {
         localStorage.setItem("userData", JSON.stringify(createUserData));
       }

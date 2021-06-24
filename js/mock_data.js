@@ -117,13 +117,13 @@ export let modelData = [
     modalName: "Ruby",
     rating: 4,
     filename: "model_pic_19.jpg",
-    gender: "male",
+    gender: "female",
   },
   {
     modalName: "Stephen",
     rating: 3,
     filename: "model_pic_20.jpg",
-    gender: "female",
+    gender: "male",
   },
   {
     modalName: "Taylor",

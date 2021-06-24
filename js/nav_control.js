@@ -1,5 +1,4 @@
-import { predefinedData } from "./mock_data.js";
-import { docGetId, docCreate } from "./common_function.js";
+import { docGetId, getItemsFromLocalStorage } from "./common_function.js";
 window.addEventListener(
   "load",
   function () {
@@ -26,9 +25,14 @@ window.addEventListener(
      *  if getUserData is not empty hide loginBtn , show logoutBtn and profileBtn
      *  else show loginBtn , hide logoutBtn and profileBtn
      */
-    let getUserData = localStorage.getItem("userData");
-    let isUserDataEmpty = getUserData === "";
-    if (!isUserDataEmpty) {
+    let getUserData = getItemsFromLocalStorage("userData");
+    let isUserNameExist = null;
+    if (getUserData !== null) {
+      isUserNameExist = getUserData.userName;
+    } else {
+      isUserNameExist = null;
+    }
+    if (isUserNameExist) {
       headerElement.loginBtn.classList.add("d-none");
       headerElement.logoutBtn.classList.remove("d-none");
       headerElement.profileBtn.classList.remove("d-none");
@@ -71,7 +75,7 @@ window.addEventListener(
     headerElement.logoutBtn.addEventListener(
       "click",
       function () {
-        localStorage.setItem("userData", "");
+        localStorage.removeItem("userData");
       },
       false
     );
