@@ -2,10 +2,6 @@
 
 ```sh
 Final Project RWD1535 by Issac
-
-RealName: Saw Issac
-StudentName: Issac
-StudentID: RWD1535
 ```
 
 ## Page Flow
