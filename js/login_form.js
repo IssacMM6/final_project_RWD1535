@@ -27,7 +27,7 @@ window.addEventListener(
      *   if userData from the loacal storage is null
      *   it will not put the userData value from the local storage to the text input.
      *   if userData is not null
-     *   email and password value from localStorage will be display in text input
+     *   email value from localStorage will be display in text input
      */
     let getUserData = getItemsFromLocalStorage("userData");
     if (getUserData !== null) {

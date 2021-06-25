@@ -22,17 +22,17 @@ main {
 .user-container .hired-list {
   border-radius: 5px;
   padding: 1rem;
-  border: 1.8px solid var(--gray);
+  border: 1.8px solid var(--gray-182);
   display: flex;
   flex-direction: column;
 }
 
 .hired-list-user {
-  border-left: 0.3rem solid black;
+  border-left: 0.3rem solid var(--dark);
   margin: 1rem 0;
   transition: 0.2s ease-in;
 }
 .hired-list-user:hover {
-  border-left: 0.3rem solid black;
-  background-color: rgba(240, 240, 240, 0.698);
+  border-left: 0.3rem solid var(--dark);
+  background-color: var(--gray-240);
 }

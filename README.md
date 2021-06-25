@@ -1,16 +1,27 @@
 ## Final Project RWD1535
 
 ```sh
-Final Project RWD1535 by Saw Issac
+Final Project RWD1535 by Issac
 
+RealName: Saw Issac
 StudentName: Issac
 StudentID: RWD1535
 ```
 
 ## Page Flow
 
+If Login
+
 ```sh
-login.html -> admin.html -> index.html
+login.html -> admin.html
+```
+
+If Logout
+
+```sh
+index.html -> login.html
+(or)
+adimn.html -> login.html
 ```
 
 ## Clickable Button List
@@ -50,7 +61,7 @@ tiny123@gmail.com
 ##### Password
 
 ```sh
-tiny1312
+tiny312
 ```
 
 ## Changes and News

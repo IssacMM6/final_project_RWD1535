@@ -1,11 +1,11 @@
 header {
-  background-color: white;
+  background-color: var(--white);
   z-index: 100;
 }
 header .banner-promotion {
   text-align: center;
-  background-color: black;
-  color: white;
+  background-color: var(--dark);
+  color: var(--white);
   padding: 0.3rem 0;
 }
 .header-close {
@@ -14,7 +14,7 @@ header .banner-promotion {
   left: 0;
   right: 0;
   width: 100%;
-  border-bottom: 1.8px solid var(--gray);
+  border-bottom: 1.8px solid var(--gray-182);
 }
 
 .header-close * {
@@ -55,7 +55,7 @@ header .banner-promotion {
 
 .nav-search {
   overflow: hidden;
-  border: 1.8px solid var(--gray);
+  border: 1.8px solid var(--gray-182);
   width: 30%;
   margin-left: 10rem;
   border-radius: 5px;
@@ -124,30 +124,7 @@ header .banner-promotion {
 .nav-toggle i {
   cursor: pointer;
 }
-.nav-footer {
-  margin: 1rem auto;
-  padding: 0;
-  list-style: none;
-  width: max-content;
-}
-.nav-link-footer {
-  display: inline-block;
-  padding: 0.5rem;
-}
-@media only screen and (max-width: 980px) {
-  .nav {
-    justify-content: flex-start;
-  }
-  .nav-link,
-  .nav-search,
-  .nav-log {
-    display: none;
-  }
-  .nav-link-footer {
-    display: block;
-    text-align: center;
-  }
-}
+
 /* Header Open */
 .header-open {
   border: none;
@@ -201,7 +178,7 @@ header .banner-promotion {
 }
 .header-open .nav-log {
   display: flex;
-  border-bottom: 1.8px solid var(--gray);
+  border-bottom: 1.8px solid var(--gray-182);
   width: 50%;
   padding: 1rem 0;
   padding-bottom: 1.5rem;
@@ -222,7 +199,7 @@ header .banner-promotion {
 }
 .header-open .nav-social {
   display: block;
-  border-bottom: 1.8px solid var(--gray);
+  border-bottom: 1.8px solid var(--gray-182);
   width: 50%;
   padding: 1.5rem 0;
   display: flex;
@@ -248,8 +225,8 @@ header .banner-promotion {
   }
   header .banner-promotion {
     text-align: center;
-    background-color: black;
-    color: white;
+    background-color: var(--dark);
+    color: var(--white);
     padding: 0.3rem 0;
     font-size: 0.6rem;
   }

@@ -1,19 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Poppins:wght@600&display=swap");
 /* color root */
 :root {
-  --gray: rgb(182, 182, 182);
+  --gray-240: rgba(240, 240, 240, 0.698);
+  --gray-182: rgb(182, 182, 182);
+  --gray-95: rgb(95, 95, 95);
+  --gray-58: rgb(58, 58, 58);
+  --white: rgb(255, 255, 255);
+  --dark: rgb(0, 0, 0);
+  --primary: rgb(0, 132, 255);
+  --primary-dark: rgb(3, 122, 233);
+  --danger-light-2: rgb(248, 215, 218);
+  --danger-light-1: rgb(245, 198, 203);
+  --danger: rgb(220, 20, 60);
+  --danger-dark: rgb(114, 28, 36);
+  --warning: rgb(189, 189, 9);
 }
 
 * {
   padding: 0;
   margin: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 /* utility */
 .border-b-1 {
-  border-bottom: 1.8px solid var(--gray);
+  border-bottom: 1.8px solid var(--gray-182);
 }
 .mx-auto {
   margin: 0 auto;
@@ -28,50 +42,50 @@
   margin: 1rem 0;
 }
 .link-underline {
-  color: black;
+  color: var(--dark);
   text-decoration: underline;
 }
 .link-underline:hover {
-  color: rgb(58, 58, 58);
+  color: var(--gray-58);
 }
 .link-none {
   text-decoration: none;
-  color: black;
+  color: var(--dark);
 }
 .link-none:hover {
-  color: rgb(58, 58, 58);
+  color: var(--gray-58);
 }
 
 /* color and background */
 .text-gray {
-  color: var(--gray);
+  color: var(--gray-182);
 }
 .text-white {
-  color: white;
+  color: var(--white);
 }
 .text-primary {
-  color: rgb(0, 132, 255);
+  color: var(--primary);
 }
 .text-danger {
-  color: rgb(220, 20, 60);
+  color: var(--danger);
 }
 .text-gray-50 {
-  color: rgb(95, 95, 95);
+  color: var(--gray-95);
 }
 .text-center {
   text-align: center;
 }
 .text-warning {
-  color: rgb(189, 189, 9);
+  color: var(--warning);
 }
 .bg-primary {
-  background-color: rgb(0, 132, 255);
+  background-color: var(--primary);
 }
 .bg-danger {
-  background-color: rgb(220, 20, 60);
+  background-color: var(--warning);
 }
 .bg-dark {
-  background-color: black;
+  background-color: var(--dark);
 }
 .btn {
   outline: none;
@@ -82,47 +96,47 @@
 /* component */
 .btn-primary {
   text-decoration: none;
-  background-color: rgb(0, 132, 255);
+  background-color: var(--primary);
   padding: 0.4rem 0.5rem;
   border: none;
   border-radius: 0.2rem;
   margin: 0 0.3rem;
-  color: white;
+  color: var(--white);
   font-family: sans;
   font-weight: 400;
-  outline-color: black;
+  outline-color: var(--dark);
   outline-width: 0.1rem;
 }
 .btn-primary:hover {
-  background-color: rgb(1, 116, 224);
+  background-color: var(--primary-dark);
 }
 .btn-outline-white {
   font-family: sans;
   font-weight: 400;
   background-color: transparent;
-  border: 0.1rem solid white;
-  color: white;
+  border: 0.1rem solid var(--white);
+  color: var(--white);
   border-radius: 2px;
   transition: 0.1s ease-in;
 }
 .btn-outline-white:hover {
-  background-color: rgb(0, 132, 255);
-  border: 0.1rem solid rgb(0, 132, 255);
-  color: white;
+  background-color: var(--primary);
+  border: 0.1rem solid var(--primary);
+  color: var(--white);
 }
 .btn-outline-dark {
   width: max-content;
   font-family: sans;
   font-weight: 400;
   background-color: transparent;
-  border: 0.1rem solid black;
-  color: black;
+  border: 0.1rem solid var(--dark);
+  color: var(--dark);
   border-radius: 2px;
   transition: 0.1s ease-in;
 }
 .btn-outline-dark:hover {
-  background-color: rgb(0, 0, 0);
-  color: white;
+  background-color: var(--dark);
+  color: var(--white);
 }
 .btn-lg {
   width: max-content;

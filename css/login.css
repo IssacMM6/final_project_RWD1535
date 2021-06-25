@@ -26,15 +26,15 @@ main {
   height: 40px;
   margin: 0.5rem 0;
   padding: 0 1rem;
-  border: 1.8px solid var(--gray);
+  border: 1.8px solid var(--gray-182);
   border-radius: 5px;
 }
 
 .login-section .login-section-form .message-box {
   padding: 1.8rem 0;
-  color: #721c24;
-  background-color: #f8d7da;
-  border-color: #f5c6cb;
+  color: var(--danger-dark);
+  background-color: var(--danger-light-1);
+  border-color: var(--danger-light-2);
   border-width: 0.2rem;
   border-radius: 5px;
 }
